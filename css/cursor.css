@@ -1,0 +1,31 @@
+@media screen and (min-width: 1200px) {
+    :root,
+    * {
+        cursor: none !important;
+    }
+    .cursor-dot,
+    .cursor-dot-outline {
+        pointer-events: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border-radius: 50%;
+        opacity: 0;
+        transform: translate(-50%, -50%);
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+        z-index: 10000;
+    }
+    .cursor-dot {
+        --size-cursor-dot: 8px;
+        width: var(--size-cursor-dot);
+        height: var(--size-cursor-dot);
+        background-color: rgba(32, 201, 151, 0.6);
+    }
+    .cursor-dot-outline {
+        --size-cursor-dot-outline: 30px;
+        width: var(--size-cursor-dot-outline);
+        height: var(--size-cursor-dot-outline);
+        background-color: rgba(255, 255, 255, 0.3);
+        opacity: 0.1;
+    }
+}

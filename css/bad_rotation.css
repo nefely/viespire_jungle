@@ -1,0 +1,51 @@
+.rotate {
+    background: var(--dark);
+    position: fixed;
+    z-index: 100000;
+    width: 100vw;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+.rotate_bg {
+    background: url(../img/preloader_bg.png);
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    z-index: 1001;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+}
+
+.rotate .wrapper {
+    position: relative;
+    z-index: 1002;
+}
+
+.rotate img {
+    min-width: 160px;
+    animation: rotatePortrait 2s steps(120, end) 0s infinite;
+}
+
+@keyframes rotatePortrait {
+    0% {
+        transform: rotate(90deg);
+    }
+    60% {
+        transform: none;
+    }
+    100% {
+        transform: none;
+    }
+}
+
+@media screen and (orientation:landscape) and (max-device-width: 820px) {
+    .rotate {
+        display: flex;
+    }
+}

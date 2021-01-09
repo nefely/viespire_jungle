@@ -1,0 +1,341 @@
+.contact_form {
+    width: 100vw;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: calc(var(--vh, 1vh) * 100) !important;
+    background: url(../img/preloader_bg.png);
+    background-size: cover;
+    background-position: center;
+    z-index: 10;
+    display: none;
+}
+
+.contact_form_container {
+    height: inherit;
+    overflow-y: scroll;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact_form .wrapper {
+    position: relative;
+    max-width: 450px;
+    width: calc(100% - 200px);
+    min-width: 280px !important;
+}
+
+.contact_form .wrapper form {
+    width: 100%;
+    max-width: 100%;
+}
+
+.contact_form .wrapper h4 {
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.contact_form_close {
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    width: 30px;
+    height: 30px;
+    z-index: 11;
+}
+
+.contact_form_close button {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border-radius: 50%;
+    background: var(--teal);
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact_form_close button:hover {
+    background: none;
+}
+
+.contact_form_close button svg {
+    width: 18px;
+    height: 18px;
+    max-width: 16px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    transform: rotate(0deg);
+    fill: var(--dark);
+}
+
+.contact_form_close button:hover svg {
+    transform: rotate(90deg);
+    fill: var(--white);
+}
+
+.input_div {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.input_div input {
+    background: transparent;
+    flex-grow: 1;
+    color: var(--gray);
+    -o-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+    transform: rotate(0deg);
+}
+
+.input_div input:focus {
+    color: var(--teal);
+}
+
+.input_div input:focus::placeholder {
+    color: var(--white);
+}
+
+.input_div input::placeholder {
+    color: var(--gray);
+    -o-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+    transform: rotate(0deg);
+}
+
+.input_div p {
+    flex-grow: auto;
+    margin-right: 15px;
+    width: auto;
+}
+
+.range {
+    width: 100%;
+}
+
+.contact_form_container .wrapper .range {
+    color: var(--white);
+    font-style: italic;
+    font-weight: var(--thin);
+}
+
+.range p {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.range_input_container {
+    width: 100%;
+}
+
+
+/* input range */
+
+:root {
+    --progress: 80%;
+}
+
+#input_summary{
+    display: none;
+}
+
+input[type=range] {
+    width: 100%;
+    height: 8px;
+    -webkit-appearance: none;
+    background: none;
+    outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    background: var(--white);
+    height: 5px;
+    border-radius: 4px;
+}
+
+input[type=range]::-moz-range-track {
+    background-color: var(--white);
+    border-radius: 4px;
+}
+
+input[type=range]::-ms-track {
+    background-color: var(--white);
+    color: transparent;
+    border: none;
+}
+
+input[type=range]::-ms-fill-lower {
+    background-color: var(--teal);
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 3px solid var(--teal);
+    height: 15px;
+    width: 15px;
+    margin-top: -3px;
+    border-radius: 8px;
+    background: #fff;
+    position: relative;
+}
+
+input[type=range]::-webkit-slider-thumb:active {
+    transform: scale(1.6);
+}
+
+input[type=range]::-moz-range-thumb {
+    border: 3px solid var(--teal);
+    height: 7px;
+    width: 7px;
+    border-radius: 8px;
+    background: #fff;
+}
+
+input[type=range]::-ms-thumb {
+    border: 3px solid var(--teal);
+    height: 7px;
+    width: 7px;
+    border-radius: 8px;
+    background: #fff;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    background: linear-gradient( to right, var(--teal) 0%, var(--teal) var(--progress), var(--white) var(--progress), var(--white));
+}
+
+input[type=range]::-moz-range-track {
+    background: linear-gradient( to right, var(--teal) 0%, var(--teal) var(--progress), var(--white) var(--progress), var(--white));
+}
+
+input[type=range]::-ms-fill-lower {
+    background: linear-gradient( to right, var(--teal) 0%, var(--teal) var(--progress), var(--white) var(--progress), var(--white));
+}
+
+.input_range_block {
+    position: relative;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.input_range_block > input {
+    margin: 0;
+}
+
+.cost_of_project {
+    color: var(--white);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.cost_of_project > p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.cost_of_project > input {
+    height: 19px;
+    width: 50px;
+    padding: 0;
+    line-height: 1em;
+    background: transparent;
+    color: var(--white);
+    color: var(--white);
+    font-style: italic;
+    font-weight: var(--thin);
+}
+
+.button_line {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.button_line > button {
+    display: block;
+    z-index: 1;
+    padding: 10px 15px;
+    background: var(--teal);
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.button_line > button:hover {
+    background: none;
+}
+
+.button_line > button > span {
+    color: var(--black);
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.button_line > button:hover > span {
+    color: var(--white);
+}
+
+/* canon media */
+
+
+/* xl */
+
+@media screen and (min-width: 1200px) {}
+
+
+/* lg */
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {}
+
+
+/* md */
+
+@media screen and (min-width: 768px) and (max-width: 991px) {}
+
+
+/* sm */
+
+@media screen and (min-width: 560px) and (max-width: 767px) {
+    /* form */
+    .input_div {
+        margin-bottom: 10px;
+        flex-wrap: wrap;
+    }
+    .input_div > p {
+        margin-right: 0px;
+        margin-bottom: 5px;
+        width: 100%;
+    }
+    .input_div > input {
+        width: 100%;
+    }
+}
+
+
+/* xs */
+
+@media screen and (max-width: 559px) {
+    /* form */
+    .input_div {
+        margin-bottom: 10px;
+        flex-wrap: wrap;
+    }
+    .input_div > p {
+        margin-right: 0px;
+        margin-bottom: 5px;
+        width: 100%;
+    }
+    .input_div > input {
+        width: 100%;
+    }
+}
+
+

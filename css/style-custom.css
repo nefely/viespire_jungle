@@ -1,0 +1,82 @@
+@import url('slick.css');
+@import url('home.css');
+@import url('portfolio.css');
+@import url('about.css');
+@import url('cursor.css');
+@import url('interface_elements.css');
+@import url('contact.css');
+@import url('bad_rotation.css');
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    min-height: calc(var(--vh, 1vh) * 100);
+    background: var(--white);
+}
+
+.wrapper {
+    width: 1170px;
+}
+
+main {
+    position: relative;
+}
+
+section {
+    width: 100%;
+    position: absolute;
+    min-height: 100vh;
+    min-height: calc(var(--vh, 1vh) * 100);
+    background: url(../img/preloader_bg.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+
+/* canon media */
+
+
+/* xl */
+
+@media screen and (min-width: 1200px) {
+    .wrapper {
+        width: 1170px;
+    }
+}
+
+
+/* lg */
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .wrapper {
+        width: 970px;
+    }
+}
+
+
+/* md */
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .wrapper {
+        width: 720px;
+    }
+}
+
+
+/* sm */
+
+@media screen and (min-width: 560px) and (max-width: 767px) {
+    .wrapper {
+        width: calc(100% - 40px);
+    }
+}
+
+
+/* xs */
+
+@media screen and (max-width: 559px) {
+    .wrapper {
+        width: calc(100% - 20px);
+    }
+}

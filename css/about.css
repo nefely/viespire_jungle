@@ -1,0 +1,71 @@
+.about_section .wrapper {
+    min-height: 100vh;
+    min-height: calc(var(--vh, 1vh) * 100);
+}
+
+.about_section_container {
+    max-width: 600px;
+}
+
+.about_section_container > h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.about_us_skills_list h5 {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 80px;
+}
+
+.about_us_skills_list > ul > li {
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+.about_section_container > div {
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: var(--thin);
+}
+
+
+/* canon media */
+
+
+/* xl */
+
+@media screen and (min-width: 1200px) {}
+
+
+/* lg */
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {}
+
+
+/* md */
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .about_us_skills_list h5 {
+        margin-top: 0px;
+    }
+}
+
+
+/* sm */
+
+@media screen and (min-width: 560px) and (max-width: 767px) {
+    .about_us_skills_list h5 {
+        margin-top: 0px;
+    }
+}
+
+
+
+/* xs */
+
+@media screen and (max-width: 559px) {
+    .about_us_skills_list h5 {
+        margin-top: 0px;
+    }
+}
